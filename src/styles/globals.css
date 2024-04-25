@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.circle-spin {
+    position: absolute;
+    top : 57%;
+    left :30%;
+    transform:  translate(-76%, -50%) rotate(0);
+    width: 30%;
+    height: 27%;
+    border-radius: 50%;
+    border-top: .2rem solid darkred;
+    border-bottom: .2rem solid darkred;
+    border-left: .2rem solid darkturquoise;
+    border-right: .2rem solid darkturquoise;
+}
