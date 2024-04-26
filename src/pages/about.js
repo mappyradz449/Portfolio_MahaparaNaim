@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import proPic from "../../public/images/profile/Mahapara.jpg";
+import Skills from "@/components/Skills";
 
 const quote = {
   initial: {
@@ -73,11 +74,13 @@ const about = () => {
                 <Image
                   src={proPic}
                   alt="Portfolio"
-                  className="w-80 h-85 rounded-2xl mb-24 mr-4 shadow-2xl shadow-darkPink/75 hover:shadow-red-400/100"
+                  className="w-80 h-85 rounded-2xl mb-24 mr-4 shadow-2xl  shadow-darkPink/75 hover:shadow-red-400/100"
                 />
               </div>
             </div>
           </div>
+
+          <Skills />
         </Layout>
       </main>
     </>
