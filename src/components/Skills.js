@@ -10,8 +10,9 @@ const Skill = ({ name, x, y }) => {
          p-8 shadow-dark cursor-pointer"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
-      animate={{ x: x, y: y }}
+      whileInView={{ x: x, y: y }}
       transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
     >
       {name}
     </motion.div>
