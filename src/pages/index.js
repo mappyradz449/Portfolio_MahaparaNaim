@@ -31,8 +31,8 @@ export default function Home() {
                 className="!text-6xl !text-left"
               />
               <p className="my-4 text-base font-medium">
-                I’m a motivated and dedicated individual With a degree in B.Sc
-                in Computer Science & Engineering from the Military Institute of
+                I’m a motivated and dedicated individual With a B.Sc. degree in
+                Computer Science & Engineering from the Military Institute of
                 Science & Technology. Explore my latest projects, showcasing my
                 expertise in web development, UI/UX designing etc.
               </p>
