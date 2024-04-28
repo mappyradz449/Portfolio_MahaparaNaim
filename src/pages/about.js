@@ -6,6 +6,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import proPic from "../../public/images/profile/Mahapara.jpg";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const quote = {
   initial: {
@@ -39,14 +41,14 @@ const about = () => {
             initial="initial"
             animate="animate"
           >
-            Consistency is the key!
+            Consistency is the key to success!
           </motion.h1>
 
           {/* //Biography container  */}
           <div className="gird w-full grid-cols-8 gap-3 justify-evenly mr-10">
             <div className="pt-16 pb-24 w-1/2 flex-col col-span-3 items-start justify-start">
-              <div class="h-5 border-b-2 border-darkPink text-2xl text-center">
-                <span class=" bg-light px-2 m-10 p-10 text-3xl font-semibold uppercase text-dark/75">
+              <div className="h-5 border-b-2 border-darkPink text-2xl text-center">
+                <span className=" bg-light px-2 m-10 p-10 text-3xl font-semibold uppercase text-dark/75">
                   Biography
                 </span>
               </div>
@@ -81,6 +83,8 @@ const about = () => {
           </div>
 
           <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
