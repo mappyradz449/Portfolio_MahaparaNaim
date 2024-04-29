@@ -37,9 +37,14 @@ const Education = () => {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center text-dark">
-        Education
-      </h2>
+      <motion.h2
+        className="font-bold text-8xl mb-32 w-full text-center text-dark"
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+      >
+        Educational Background
+      </motion.h2>
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
