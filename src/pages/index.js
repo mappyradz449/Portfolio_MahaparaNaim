@@ -6,6 +6,9 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -56,8 +59,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </Layout>
 
+          {/* <Skills />
+          <Experience />
+          <Education /> */}
+        </Layout>
         <HireMe />
       </main>
     </>
