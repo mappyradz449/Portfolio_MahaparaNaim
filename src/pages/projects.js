@@ -9,96 +9,111 @@ import ProjectTag from "@/components/ProjectTag";
 const ProjectsData = [
   {
     id: 1,
-    title: "React Website",
-    description: "Project 1 Description",
+    title: "Syvel",
+    description: "A ride-sharing web application to request car rides. ",
+    tech: "[ HTML/CSS, JavaScript, ExpressJS, Oracle ]",
     image: "/images/projects/syvel.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
-    previewUrl: "https://mahatodolist.netlify.app/",
+    gitUrl: "https://github.com/darkluminance/Ride-Sharing-service-database",
+    previewUrl:
+      "https://www.facebook.com/100018744274370/videos/840465419921593/",
   },
 
   {
     id: 2,
-    title: "NextJS Website",
-    description: "Project 2 Description",
+    title: "LiveChat",
+    description: "A personal live chatroom to have confidential conversions.",
+    tech: "[ NextJs, SocketIO & shadcn/ui ]",
     image: "/images/projects/livechat.jpg",
-
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
-    previewUrl: "https://mahatodolist.netlify.app/",
+    gitUrl: "https://github.com/mappyradz449/chatapp_react_websocket",
+    previewUrl: "https://live-chat-maha.vercel.app/room",
   },
 
   {
     id: 3,
-    title: "NodeJS Website",
-    description: "Project 3 Description",
+    title: "TodoList",
+    description: "A simple todo list to note down everyday activities",
+    tech: "[ ReactJs, NodeJs, ExpressJs, MongoDB & Redux ]",
     image: "/images/projects/todo.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
+    gitUrl: "https://github.com/mappyradz449/TodoList",
     previewUrl: "https://mahatodolist.netlify.app/",
   },
 
   {
     id: 4,
-    title: "Flutter App",
-    description: "Project 4 Description",
+    title: "LinkCut",
+    description: "A URL shortener that shortens lengthy urls to short ones.",
+    tech: "[ Next js, Tailwindcss ]",
     image: "/images/projects/linkcut.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
-    previewUrl: "https://mahatodolist.netlify.app/",
+    gitUrl: "https://github.com/mappyradz449/url-shortener",
+    previewUrl: "https://link-cut.vercel.app/",
   },
 
   {
     id: 5,
-    title: "React Website",
-    description: "Project 5 Description",
+    title: "DreamHouse",
+    description: "An interior designer's web app to assist clients",
+    tech: "[ HTML/CSS, Bootstrap, JavaScript, Firebase ]",
     image: "/images/projects/dream_house.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
-    previewUrl: "https://mahatodolist.netlify.app/",
+    gitUrl: "https://github.com/mappyradz449/Dream_House",
+    previewUrl: "https://mappyradz449.github.io/Dream_House/",
   },
 
   {
     id: 6,
-    title: "React Website",
-    description: "Project 6 Description",
-    image: "/images/projects/BabyMonitor.jpg",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
-    previewUrl: "https://mahatodolist.netlify.app/",
-  },
-  {
-    id: 7,
-    title: "React Website",
-    description: "Project 7 Description",
-    image: "/images/projects/TBL.jpg",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
-    previewUrl: "https://mahatodolist.netlify.app/",
-  },
-  {
-    id: 8,
-    title: "React Website",
-    description: "Project 7 Description",
-    image: "/images/projects/signuppage.jpg",
-    tag: ["All", "UI/UX"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
-    previewUrl: "https://dribbble.com/shots/23554478-Daily-UI-01-Sign-Up-Page",
-  },
-  {
-    id: 9,
-    title: "React Website",
-    description: "Project 7 Description",
+    title: "Credit Card Checkout",
+    description: "Embrace the dark-themed hues with ethereal lightness.",
+    tech: "[ Figma ]",
     image: "/images/projects/creditcardpg.jpg",
     tag: ["All", "UI/UX"],
-    gitUrl: "https://github.com/mappyradz449/Portfolio",
+    gitUrl:
+      "https://www.figma.com/file/93EhJaCjZeuLTCU6JHmC3g/DailyUI---%2302-(Credit-Card-Checkout-Page)?type=design&node-id=13%3A15&mode=design&t=Y8Yn3XPQMpH5xDkd-1",
     previewUrl:
       "https://dribbble.com/shots/23591432-Daily-UI-02-Credit-Card-Checkout",
   },
   {
+    id: 7,
+    title: "Flutter App TBL",
+    description:
+      "An app similar to TBL having an OTP based authentication system.",
+    tech: "[ Flutter, Figma, Firebase ]",
+    image: "/images/projects/TBL.jpg",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/mappyradz449/App_TBL",
+    previewUrl: "https://github.com/mappyradz449/App_TBL",
+  },
+  {
+    id: 8,
+    title: "Sign Up Page",
+    description:
+      "Minimalistic aesthetics, ensuring a seamless user experience.",
+    tech: "[ Figma ]",
+    image: "/images/projects/signuppage.jpg",
+    tag: ["All", "UI/UX"],
+    gitUrl:
+      "https://www.figma.com/file/5T0zFbGwzttzehzAXmXmBP/DailyUI-%2301?type=design&node-id=36%3A488&mode=design&t=Y8Yn3XPQMpH5xDkd-1",
+    previewUrl: "https://dribbble.com/shots/23554478-Daily-UI-01-Sign-Up-Page",
+  },
+  {
+    id: 9,
+    title: "A baby monitoring flutter app",
+    description: "A Wearable Monitoring Device for Infants",
+    tech: "[ Flutter, Dart, Firebase, Python, Raspberry Pi ]",
+    image: "/images/projects/BabyMonitor.jpg",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/RaiyanJahangir/Capstone-Project",
+    previewUrl:
+      "https://drive.google.com/file/d/1FYKX5OrI6yVYzbAZ322zZjEqFaQTGDw_/view?usp=sharing",
+  },
+  {
     id: 10,
-    title: "React Website",
-    description: "Project 7 Description",
+    title: "Logo",
+    description: "Personal logo design using arc pugin.",
+    tech: "[ Figma ]",
     image: "/images/projects/logo.png",
     tag: ["All", "UI/UX"],
     gitUrl: "https://github.com/mappyradz449/Portfolio",
@@ -151,7 +166,7 @@ const projects = () => {
             Deserve before you desire!
           </motion.h1>
 
-          <div className="text-dark font-bold flex flex-row justify-center items-center gap-2 py-6">
+          <div className="text-dark font-bold flex flex-row justify-center items-center gap-4 py-10">
             <ProjectTag
               onClick={handleTagChange}
               name="All"
@@ -179,6 +194,7 @@ const projects = () => {
                 key={project.id}
                 title={project.title}
                 description={project.description}
+                techNames={project.tech}
                 imgUrl={project.image}
                 tags={project}
                 gitUrl={project.gitUrl}

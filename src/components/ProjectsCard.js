@@ -2,10 +2,18 @@ import React from "react";
 import { HiCodeBracket } from "react-icons/hi2";
 import { FaEye } from "react-icons/fa";
 import { BsEye } from "react-icons/bs";
+import { Slide, Fade } from "react-awesome-reveal";
 
 import Link from "next/link";
 
-const ProjectsCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectsCard = ({
+  imgUrl,
+  title,
+  description,
+  techNames,
+  gitUrl,
+  previewUrl,
+}) => {
   return (
     <div>
       <div
@@ -13,6 +21,19 @@ const ProjectsCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
+          <div className="text-light absolute font-medium group-hover:top-[0] p-4 w-full h-full divide-neutral-500">
+            <Slide cascade direction="right">
+              <h1 className="text-2xl font-semibold text-darkPink/100">
+                {title}
+              </h1>
+              <Fade cascade damping={0.05}>
+                {description}
+              </Fade>
+              <Fade className="text-darkPink/100" cascade damping={0.05}>
+                {techNames}
+              </Fade>
+            </Slide>
+          </div>
           <Link
             href={gitUrl}
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
@@ -27,11 +48,6 @@ const ProjectsCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </Link>
         </div>
       </div>
-
-      {/* <div className="text-light font-medium rounded-b-xl bg-[#181818] py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
-      </div> */}
     </div>
   );
 };
