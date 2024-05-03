@@ -17,17 +17,17 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold text-2xl text-black dark:text-light">
           {position}&nbsp;
           <a
             href={companyLink}
             target="_blank"
-            className="capitalize text-primary"
+            className="capitalize text-primary dark:text-primaryDark"
           >
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-slate-50/80">
           {time} | {address}
         </span>
 
@@ -47,7 +47,7 @@ const Experience = () => {
   return (
     <div className="my-64">
       <motion.h2
-        className="font-bold text-8xl mb-32 w-full text-center text-dark"
+        className="font-bold text-8xl mb-32 w-full text-center text-dark dark:text-light"
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
@@ -57,7 +57,7 @@ const Experience = () => {
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details

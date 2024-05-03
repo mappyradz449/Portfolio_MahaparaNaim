@@ -158,7 +158,7 @@ const projects = () => {
       <main className="w-full flex mb-16 flex-col items-center justify-center">
         <Layout className="pt-16">
           <motion.h1
-            className="inline-block w-full text-dark font-bold text-8xl text-center"
+            className="inline-block w-full text-dark dark:text-light font-bold text-8xl text-center"
             variants={quote}
             initial="initial"
             animate="animate"

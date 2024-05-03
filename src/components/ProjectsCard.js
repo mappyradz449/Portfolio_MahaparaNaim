@@ -1,6 +1,5 @@
 import React from "react";
 import { HiCodeBracket } from "react-icons/hi2";
-import { FaEye } from "react-icons/fa";
 import { BsEye } from "react-icons/bs";
 import { Slide, Fade } from "react-awesome-reveal";
 
