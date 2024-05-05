@@ -53,7 +53,12 @@ export default function Home() {
                    border-transparent hover:border-darkPink"
                   download={true}
                 >
-                  Resume <LinkArrow className={"w-6 ml-2 mb-1"} />
+                  Resume{" "}
+                  <LinkArrow
+                    className={
+                      "w-6 ml-2 mb-1 md:w-5 md:ml-2 md:mb-0 sm:w-4 sm:ml-1 sm:mb-0"
+                    }
+                  />
                 </Link>
                 <Link
                   href="mahaparanaim57@gmail.com"

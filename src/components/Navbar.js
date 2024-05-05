@@ -267,7 +267,7 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[45%] top-5 translate-x-[45%] self-center">
+      <div className="absolute left-[45%] md:left-[43%] sm:left-[38%] top-5 translate-x-[45%] md:translate-x-[43%] sm:translate-x-[38%] self-center">
         {/* the animated puppy at center */}
         <MotionImage
           className="cursor-pointer rounded-full"
