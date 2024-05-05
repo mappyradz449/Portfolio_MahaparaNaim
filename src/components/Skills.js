@@ -59,7 +59,7 @@ const Skills = () => {
         <Skill name="Figma" x="-22vw" y="1vw" />
         <Skill name="Javascript" x="-34vw" y="8vw" /> */}
         <Skill name="MongoDb" x="calc(30vw - 50%)" y="0vw" />
-        <Skill name="HTML/CSS" x="calc(60vw - 50%)" y="4vw" />
+        <Skill name="HTML/CSS" x="calc(17vw - 50%)" y="4vw" />
         <Skill name="Javascript" x="calc(40vw - 50%)" y="-20vw" />
         <Skill name="NodeJS" x="calc(15vw - 50%)" y="-12vw" />
         <Skill name="ExpressJs" x="calc(10vw - 50%)" y="10vw" />
@@ -68,9 +68,9 @@ const Skills = () => {
         <Skill name="C/C++" x="calc(2vw - 50%)" y="5vw" />
         <Skill name="Python" x="calc(7vw - 50%)" y="10vw" />
         <Skill name="GitHub" x="calc(-15vw - 50%)" y="-12vw" />
-        <Skill name="Flutter" x="calc(-17vw - 50%)" y="-7vw" />
-        <Skill name="Firebase" x="calc(-23vw - 50%)" y="0vw" />
-        <Skill name="Figma" x="calc(-30vw - 50%)" y="15vw" />
+        <Skill name="Flutter" x="calc(-37vw - 50%)" y="-7vw" />
+        <Skill name="Firebase" x="calc(-40vw - 50%)" y="5vw" />
+        <Skill name="Figma" x="calc(-64vw - 50%)" y="17vw" />
       </div>
     </>
   );
