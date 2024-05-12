@@ -5,6 +5,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import ProjectsCard from "@/components/ProjectsCard";
 import ProjectTag from "@/components/ProjectTag";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const ProjectsData = [
   {
@@ -22,7 +23,7 @@ const ProjectsData = [
   {
     id: 2,
     title: "LiveChat",
-    description: "A personal live chatroom to have confidential conversions.",
+    description: "A live chatroom for conversations.",
     tech: "[ NextJs, SocketIO & shadcn/ui ]",
     image: "/images/projects/livechat.jpg",
     tag: ["All", "Web"],
@@ -33,7 +34,7 @@ const ProjectsData = [
   {
     id: 3,
     title: "TodoList",
-    description: "A simple todo list to note down everyday activities",
+    description: "A todo list to note down everyday activities.",
     tech: "[ ReactJs, NodeJs, ExpressJs, MongoDB & Redux ]",
     image: "/images/projects/todo.jpg",
     tag: ["All", "Web"],
@@ -44,7 +45,7 @@ const ProjectsData = [
   {
     id: 4,
     title: "LinkCut",
-    description: "A URL shortener that shortens lengthy urls to short ones.",
+    description: "Shortens lengthy URLs to short ones.",
     tech: "[ Next js, Tailwindcss ]",
     image: "/images/projects/linkcut.jpg",
     tag: ["All", "Web"],
@@ -55,7 +56,7 @@ const ProjectsData = [
   {
     id: 5,
     title: "DreamHouse",
-    description: "An interior designer's web app to assist clients",
+    description: "An interior designer's web app to assist clients.",
     tech: "[ HTML/CSS, Bootstrap, JavaScript, Firebase ]",
     image: "/images/projects/dream_house.jpg",
     tag: ["All", "Web"],
@@ -66,7 +67,7 @@ const ProjectsData = [
   {
     id: 6,
     title: "Credit Card Checkout",
-    description: "Embrace the dark-themed hues with ethereal lightness.",
+    description: "Embrace the dark hues with ethereal lightness.",
     tech: "[ Figma ]",
     image: "/images/projects/creditcardpg.jpg",
     tag: ["All", "UI/UX"],
@@ -78,8 +79,7 @@ const ProjectsData = [
   {
     id: 7,
     title: "Flutter App TBL",
-    description:
-      "An app similar to TBL having an OTP based authentication system.",
+    description: "An OTP based authentication app.",
     tech: "[ Flutter, Figma, Firebase ]",
     image: "/images/projects/TBL.jpg",
     tag: ["All", "Mobile"],
@@ -89,8 +89,7 @@ const ProjectsData = [
   {
     id: 8,
     title: "Sign Up Page",
-    description:
-      "Minimalistic aesthetics, ensuring a seamless user experience.",
+    description: "Minimal aesthetics, ensuring a seamless accessibility.",
     tech: "[ Figma ]",
     image: "/images/projects/signuppage.jpg",
     tag: ["All", "UI/UX"],
@@ -101,7 +100,7 @@ const ProjectsData = [
   {
     id: 9,
     title: "A baby monitoring flutter app",
-    description: "A Wearable Monitoring Device for Infants",
+    description: "A Wearable Monitoring Device for Infants.",
     tech: "[ Flutter, Dart, Firebase, Python, Raspberry Pi ]",
     image: "/images/projects/BabyMonitor.jpg",
     tag: ["All", "Mobile"],
@@ -155,10 +154,11 @@ const projects = () => {
         <title>Portfolio | Projects Page</title>
         <meta name="description" content="any description"></meta>
       </Head>
+      <TransitionEffect />
       <main className="w-full flex mb-16 flex-col items-center justify-center">
         <Layout className="pt-16">
           <motion.h1
-            className="inline-block w-full text-dark font-bold text-8xl text-center"
+            className="inline-block w-full text-dark dark:text-light font-bold text-8xl text-center mb-7 md:text-6xl sm:text-4xl"
             variants={quote}
             initial="initial"
             animate="animate"
@@ -166,7 +166,13 @@ const projects = () => {
             Deserve before you desire!
           </motion.h1>
 
-          <div className="text-dark font-bold flex flex-row justify-center items-center gap-4 py-10">
+          <div className="h-5 border-b-2 border-darkPink text-2xl text-center ">
+            <span className=" bg-light dark:bg-gray-950 px-2 py-4 my-4 text-3xl lg:text-2xl md:text-xl font-semibold uppercase text-dark/75 dark:text-light/75">
+              Projects
+            </span>
+          </div>
+
+          <div className="text-dark font-bold flex flex-row justify-center items-center gap-4 sm:gap-2 py-10 md:font-medium sm:font-normal">
             <ProjectTag
               onClick={handleTagChange}
               name="All"
@@ -188,7 +194,7 @@ const projects = () => {
               isSelected={tag === "UI/UX"}
             />
           </div>
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8">
             {filteredProjects.map((project) => (
               <ProjectsCard
                 key={project.id}
