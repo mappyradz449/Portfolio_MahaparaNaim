@@ -8,6 +8,7 @@ import proPic from "../../public/images/profile/Mahapara.jpg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const quote = {
   initial: {
@@ -32,6 +33,7 @@ const about = () => {
         <title>Portfolio | About Page</title>
         <meta name="description" content="any description"></meta>
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-cente">
         <Layout className="pt-12">
           {/* title tag */}
