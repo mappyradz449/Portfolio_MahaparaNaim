@@ -44,7 +44,7 @@ export default function Home() {
                 I’m a motivated and dedicated individual With a B.Sc. degree in
                 Computer Science & Engineering from the Military Institute of
                 Science & Technology. Explore my latest projects, showcasing my
-                expertise in web development, UI/UX designing etc.
+                expertise.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link

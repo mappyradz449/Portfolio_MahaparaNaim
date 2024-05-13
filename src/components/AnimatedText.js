@@ -53,9 +53,8 @@ const AnimatedText = ({ text, className = "" }) => {
             <Typewriter
               options={{
                 strings: [
-                  "Web Developer.",
-                  "UI/UX Designer.",
                   "SQA Engineer.",
+                  "FrontEnd Web Developer.",
                   "Product Manager.",
                 ],
                 autoStart: true,
