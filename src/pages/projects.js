@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Layout from "@/components/Layout";
 import React, { useState } from "react";
 import Head from "next/head";
