@@ -136,18 +136,23 @@ const contact = () => {
         <Layout className="pt-10">
           <div className="w-full h-full inline-block p-5 mt-10 mb-10 xl:p-9 lg:p-8 md:p-6 sm:p-5 ">
             <div className="h-5 border-b-2 border-darkPink text-2xl text-center ">
-              <span className=" bg-light dark:bg-gray-950 px-2 py-4 my-4 text-3xl lg:text-2xl md:text-xl font-semibold uppercase text-dark/75 dark:text-light/75">
+              <span className=" bg-light dark:bg-gray-950 px-2 py-4 my-4 text-3xl lg:text-2xl md:text-xl font-semibold uppercase text-dark/75 dark:text-white">
                 Let's Connect
               </span>
             </div>
             <motion.p
-              className="inline-block w-full text-dark pt-5 mt-5 dark:text-light font-light text-3xl text-center lg:text-2xl sm:text-xl xs:text-lg"
+              className="inline-block w-full text-dark pt-5 mt-5 dark:text-white font-light text-xl text-center lg:text-lg sm:text-base xs:text-sm"
               variants={quote}
               initial="initial"
               animate="animate"
             >
-              Seeking new opportunities to grow and contribute. Feel free to
-              contact me.
+              Currently on the lookout for new opportunities as a{" "}
+              <bold className="text-darkPink">
+                SQA Engineer, Product Manager, or FrontEnd Developer
+              </bold>
+              . I'm dedicated to crafting innovative, bug-free systems with a
+              focus on seamless user experiences.Feel free to contact me for any
+              inquiries!
             </motion.p>
 
             <div className="grid grid-cols-4 lg:grid-cols-2 md:grid-cols-1 place-items-center gap-10">
