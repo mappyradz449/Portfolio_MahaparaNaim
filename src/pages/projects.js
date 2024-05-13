@@ -24,10 +24,10 @@ const ProjectsData = [
     id: 2,
     title: "LiveChat",
     description: "A live chatroom for conversations.",
-    tech: "[ NextJs, SocketIO & shadcn/ui ]",
+    tech: "[ ExpressJs, SocketIO & shadcn/ui ]",
     image: "/images/projects/livechat.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/mappyradz449/chatapp_react_websocket",
+    gitUrl: "https://github.com/mappyradz449/chatrooms-socketio-express",
     previewUrl: "https://live-chat-maha.vercel.app/room",
   },
 
